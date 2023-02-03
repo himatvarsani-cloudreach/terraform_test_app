@@ -7,7 +7,7 @@ provider "aws" {
 # create vpc to reference the vpc module
 module "vpc" {
     # source is where you would load the module from
-    source                              = "../modules/vpc"
+    source                              = "../aws_modules_VPC"
     region                              = var.region
     project_name                        = var.project_name
     vpc_cidr                            = var.vpc_cidr
