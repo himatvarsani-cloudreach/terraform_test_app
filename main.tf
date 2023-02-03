@@ -7,7 +7,7 @@ provider "aws" {
 # create vpc to reference the vpc module
 module "vpc" {
     # source is where you would load the module from
-    source                              = "../aws_modules_VPC"
+    source                              = "git::https://github.com/himatvarsani-cloudreach/aws_modules_VPC.git?ref=v1.0.0"
     region                              = var.region
     project_name                        = var.project_name
     vpc_cidr                            = var.vpc_cidr
